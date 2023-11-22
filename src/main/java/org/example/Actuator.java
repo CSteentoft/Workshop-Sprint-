@@ -1,15 +1,15 @@
 package org.example;
 
 public class Actuator {
-    Double value;
-    String name;
-    int actuatorID;
+    private Double value;
+    private String name;
+    private int actuatorID;
 
     public void setValue(Double value) {
         this.value = value;
     }
 
-    public Double getValue() {
+    public Double getValue(String name) {
         return value;
     }
 }

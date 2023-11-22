@@ -1,4 +1,4 @@
 package org.example;
 
-public class CO2Sensor {
+public class CO2Sensor extends Sensor{
 }
