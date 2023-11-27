@@ -1,9 +1,19 @@
 package org.example;
 
+import java.util.UUID;
+
 public class Actuator {
     private Double value;
     private String name;
-    private int actuatorID;
+    private UUID actuatorID;
+
+    public Actuator(String name, UUID actuatorID) {
+
+    }
+
+    public UUID getActuatorID() {
+        return actuatorID;
+    }
 
     public void setValue(Double value) {
         this.value = value;

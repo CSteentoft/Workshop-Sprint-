@@ -21,18 +21,16 @@ public interface IBuildingManagementSystem {
     public Map<UUID,String> getBuildingInformation();
 
     /**
-     *
      * @param buildingId Building from which sensors are acquired
      * @return Map containing UUIDs of all sensors in building with buildingId, along with associated description of each sensor (i.e. name)
      */
-    public Map<UUID,String> getSensorInformation(UUID buildingId);
+    public List<String> getSensorInformation(UUID buildingId);
 
     /**
-     *
      * @param buildingId Building from which sensors are acquired
      * @return Map containing UUIDs of all actuators in building with buildingId, along with associated description of each actuator (i.e. name)
      */
-    public Map<UUID,String> getActuatorInformation(UUID buildingId);
+    public List<String> getActuatorInformation(UUID buildingId);
     
     /**
      *

@@ -1,13 +1,17 @@
 package org.example;
 
+import java.util.UUID;
+
 public class Sensor {
-    private int sensorID;
+    private UUID sensorID;
     private String name;
+    private Double value;
 
-    private Double value
-
-    public int getSensorID() {
+    public UUID getSensorID() {
         return sensorID;
     }
 
+    public Sensor(String name, UUID sensorID) {
+
+    }
 }
